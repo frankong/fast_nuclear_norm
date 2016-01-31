@@ -2,6 +2,7 @@ function [l, r] = bapgd(niter, fdata, gradf, gldata, proxgl, grdata, proxgr, alp
 % Accelerated proximal gradient descent method for bilinear problem
 % Solves min_l,r f(l*r') + gl(l) + gr(r)
 % where f is smooth but non-convex and gl, gr convex but non-smooth
+% Uses heavy-ball method for acceleration
 % 
 % Inputs
 %   niter      Number of iterations

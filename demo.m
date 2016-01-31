@@ -1,4 +1,4 @@
-%% Singular value thresholding via proximal gradient descent
+%% Demo of singular value thresholding via proximal gradient methods
 clc
 clear
 close all
@@ -36,6 +36,5 @@ l = randn( M, rank );
 r = randn( N, rank );
 
 [l, r] = bpgd(niter, fdata, gradf, gldata, proxgl, grdata, proxgr, alpha, l, r);
-
 
 svd(y) - svd(l*r')
